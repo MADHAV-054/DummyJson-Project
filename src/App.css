@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+.navbar li{
+  display: inline-flex;
+  margin-left:20px;
+}
+
+.navbar li a.active{
+  color: skyblue;
+}
+
+.navbar li:hover a{
+  color:red;
+
+}
+
+.card {
+  /* Add a border and shadow for a 'card' look */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-top: 20px;
+  /* Internal spacing */
+  padding: 15px;
+  
+  /* Ensure content is laid out nicely */
+  display: inline-block;
+  flex-direction: row;
+  
+  /* Smooth transition for hover effects */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
