@@ -11,6 +11,7 @@ import Mobile from './Mobile';
 import Email from './Email';
 import Signup from './Signup';
 import Login from './Login';
+import Logout from './Logout'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -22,9 +23,10 @@ root.render(
             <Route path="Mobile" element={<Mobile/>}/>
             <Route path="Email" element={<Email/>}/>
             </Route>
-      <Route path="*" Component={NoModule}/>
-      <Route path="/Signup" Component={Signup}/>
-      <Route path="/Login" Component={Login}/>
+      <Route path="*" element={<NoModule />}/>
+      <Route path="/signup" element={<Signup />}/>
+      <Route path="/logout" element={<Logout />}/>
+      <Route path="/login" element={<Login />}/>
     </Routes>
     </BrowserRouter>
 
